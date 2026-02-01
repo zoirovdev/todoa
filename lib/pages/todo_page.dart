@@ -29,41 +29,67 @@ class _TodoPageState extends State<TodoPage> {
         Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
               child: Column(
                 children: [
-                  Text("task description"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Task description",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 10.0),
               
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.amber.shade700,
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      width: 250,                  
-                      child: Text("Start"),
+                      width: 250,    
+                      padding: EdgeInsets.symmetric(vertical: 5),              
+                      child: Text(
+                        "Start",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.edit, color: Colors.amber)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.edit_outlined, color: Colors.amber.shade700, size: 20)
                         ),
+                        SizedBox(width: 5),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.delete, color: Colors.red)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.delete_outline, color: Colors.red, size: 20)
                         )
                       ],
                     )
@@ -79,41 +105,67 @@ class _TodoPageState extends State<TodoPage> {
             ),
             
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
               child: Column(
                 children: [
-                  Text("task description"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Task description",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 10.0),
               
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.amber.shade700,
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      width: 250,                  
-                      child: Text("Start"),
+                      width: 250,  
+                      padding: EdgeInsets.symmetric(vertical: 5),                
+                      child: Text(
+                        "Start",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.edit, color: Colors.amber)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.edit_outlined, color: Colors.amber.shade700, size: 20)
                         ),
+                        SizedBox(width: 5),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.delete, color: Colors.red)
+                          padding: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+                          child: Icon(Icons.delete_outline, color: Colors.red, size: 20)
                         )
                       ],
                     )
@@ -129,41 +181,67 @@ class _TodoPageState extends State<TodoPage> {
             ),
             
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
               child: Column(
                 children: [
-                  Text("task description"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Task description",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 10.0),
               
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.amber.shade700,
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      width: 250,                  
-                      child: Text("Start"),
+                      width: 250,    
+                      padding: EdgeInsets.symmetric(vertical: 5),              
+                      child: Text(
+                        "Start",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.edit, color: Colors.amber)
+                          padding: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+                          child: Icon(Icons.edit_outlined, color: Colors.amber.shade700, size: 20)
                         ),
+                        SizedBox(width: 5),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.delete, color: Colors.red)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.delete_outline, color: Colors.red, size: 20)
                         )
                       ],
                     )
@@ -179,41 +257,67 @@ class _TodoPageState extends State<TodoPage> {
             ),
             
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
               child: Column(
                 children: [
-                  Text("task description"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Task description",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 10.0),
               
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.amber.shade700,
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      width: 250,                  
-                      child: Text("Start"),
+                      width: 250,    
+                      padding: EdgeInsets.symmetric(vertical: 5),              
+                      child: Text(
+                        "Start",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.edit, color: Colors.amber)
+                          padding: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+                          child: Icon(Icons.edit_outlined, color: Colors.amber.shade700, size: 20)
                         ),
+                        SizedBox(width: 5),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.delete, color: Colors.red)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.delete_outline, color: Colors.red, size: 20)
                         )
                       ],
                     )
@@ -229,41 +333,67 @@ class _TodoPageState extends State<TodoPage> {
             ),
             
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
               child: Column(
                 children: [
-                  Text("task description"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Task description",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 10),
               
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.amber.shade700,
                         borderRadius: BorderRadius.circular(10)
                       ),
                       width: 250,                  
-                      child: Text("Start"),
+                      padding: EdgeInsets.symmetric(vertical: 5),
+                      child: Text(
+                        "Start",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.edit, color: Colors.amber)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.edit_outlined, color: Colors.amber.shade700, size: 20)
                         ),
+                        SizedBox(width: 5),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.delete, color: Colors.red)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.delete_outline, color: Colors.red, size: 20)
                         )
                       ],
                     )
@@ -279,41 +409,67 @@ class _TodoPageState extends State<TodoPage> {
             ),
             
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
               child: Column(
                 children: [
-                  Text("task description"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Task description",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 10.0),
               
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.amber.shade700,
                         borderRadius: BorderRadius.circular(10)
                       ),
+                      padding: EdgeInsets.symmetric(vertical: 5),
                       width: 250,                  
-                      child: Text("Start"),
+                      child: Text(
+                        "Start",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.edit, color: Colors.amber)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.edit_outlined, color: Colors.amber.shade700, size: 20)
                         ),
+                        SizedBox(width: 5),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.amber.shade200
+                              color: Colors.amber.shade700
                             ),
                             borderRadius: BorderRadius.circular(5)
                           ),
-                          child: Icon(Icons.delete, color: Colors.red)
+                          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                          child: Icon(Icons.delete_outline, color: Colors.red, size: 20)
                         )
                       ],
                     )

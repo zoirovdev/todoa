@@ -27,6 +27,22 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        // add flow button
+        floatingActionButton: Transform.translate(
+          offset: Offset(20, 20),
+          child: Padding(
+            padding: EdgeInsets.all(20), 
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.amber.shade700,
+                borderRadius: BorderRadius.circular(50)
+              ),
+              padding: EdgeInsets.all(20),
+              child: Icon(Icons.add, color: Colors.white,)
+            ),
+          ),
+        ),
+
         // display screen based on current index
         body: Padding(
           padding: const EdgeInsets.only(top: 50.0),
