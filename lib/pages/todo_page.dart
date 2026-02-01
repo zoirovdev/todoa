@@ -16,7 +16,7 @@ class _TodoPageState extends State<TodoPage> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10.0),
+          padding: const EdgeInsets.only(top: 20.0),
           child: Text(
             "Todo", 
             style: TextStyle(
