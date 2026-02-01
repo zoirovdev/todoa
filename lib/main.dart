@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoa/pages/doing_page.dart';
 import 'package:todoa/pages/done_page.dart';
-import 'package:todoa/pages/home_page.dart';
 import 'package:todoa/pages/todo_page.dart';
 
 void main() {
