@@ -17,9 +17,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _currentIndex = 0;
   final List<Widget> _screens = [
-    const Center(child: TodoPage()),
-    const Center(child: DoingPage()),
-    const Center(child: DonePage()),
+    TodoPage(),
+    DoingPage(),
+    DonePage(),
   ];
 
   @override
@@ -28,7 +28,10 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         // display screen based on current index
-        body: _screens[_currentIndex],
+        body: Padding(
+          padding: const EdgeInsets.only(top: 50.0),
+          child: _screens[_currentIndex],
+        ),
 
         // bottom navigation bar
         bottomNavigationBar: NavigationBar(
