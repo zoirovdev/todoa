@@ -40,15 +40,15 @@ class _MyAppState extends State<MyApp> {
           },
           destinations: [
             NavigationDestination(
-              icon: Icon(Icons.circle_outlined),
+              icon: Icon(Icons.circle_outlined, color: Colors.amber),
               label: "To do",
             ),
             NavigationDestination(
-              icon: Icon(Icons.circle),
+              icon: Icon(Icons.circle, color: Colors.amber,),
               label: "Doing",
             ),
             NavigationDestination(
-              icon: Icon(Icons.check_circle),
+              icon: Icon(Icons.check_circle, color: Colors.amber,),
               label: "Done",
             )
           ],
